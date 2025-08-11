@@ -1,5 +1,6 @@
 
 using FoodieGo.API.Data;
+using FoodieGo.API.SQL;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodieGo.API
@@ -11,11 +12,6 @@ namespace FoodieGo.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            var databaseConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            builder.Services.AddDbContext<AppDbContext>(options =>
-            {
-                options.UseMySQL(databaseConnectionString);
-            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -23,6 +19,10 @@ namespace FoodieGo.API
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+
+            var sqlHandler = new SqlHandler();
+            sqlHandler.DbStartup();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
