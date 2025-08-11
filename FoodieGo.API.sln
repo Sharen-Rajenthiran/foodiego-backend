@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieGo.API", "FoodieGo.API.csproj", "{B0067840-AB04-4543-AA42-A939499074DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0067840-AB04-4543-AA42-A939499074DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0067840-AB04-4543-AA42-A939499074DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0067840-AB04-4543-AA42-A939499074DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0067840-AB04-4543-AA42-A939499074DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BF550EB-E82B-4CAE-A806-4B6589089226}
+	EndGlobalSection
+EndGlobal
