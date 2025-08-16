@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\FoodieGo.Application\FoodieGo.Application.csproj" />
+    <ProjectReference Include="..\FoodieGo.Domain\FoodieGo.Domain.csproj" />
+    <ProjectReference Include="..\FoodieGo.Infrastructure\FoodieGo.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
